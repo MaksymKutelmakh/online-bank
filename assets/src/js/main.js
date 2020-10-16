@@ -94,3 +94,4 @@ function getTimeRemaining(endtime) {
   
   var deadline = new Date(Date.parse(new Date()) + 5 * 210000);
   initializeClock("countdown", deadline);
+  

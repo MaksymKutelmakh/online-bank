@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="modal-button" onclick="openModal()">
+            <a href="#" >Открыть модалку</a>
+            <div class="bluer"></div>
+        </div>
+        <div id="modal">
+            <div class="modal-header">
+                <div class="bonus">
+                    <div class="container-bonus">
+                        +100%
+                    </div>
+                </div>
+                <div class="close-button" onclick="closeModal()">
+                    <img src="./img/close.png" alt="close-modal">
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="time-to-end">
+                    <img src="./img/Vector (20).png" style="padding-bottom: 1px;" alt="clock-icon">
+                    <div id="countdown" class="countdown">
+                        <span class="hours countdown-time"></span>
+                        <span class="minutes countdown-time"></span>
+                        <span class="seconds countdown-time"></span>
+                    </div>
+                </div>
+                <div class="modal-title">
+                    Увеличить свой депозит!
+                </div>
+                <div class="methods-of-payment">
+                    <div class="select">
+                        <input class="select__input" type="hidden" name="">
+                        <div class="select__head"><img src="./img/Vector (21).png">Банковская карта</div>
+                        <ul class="select__list" style="display: none;">
+                            <li class="select__item"><img src="./img/Vector (21).png">Банковская карта</li>
+                            <li class="select__item">Биткоин</li>
+                            <li class="select__item">Выставить счет</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tariffs">
+                    <div class="tariff">
+                        <div class="replenish">
+                            <span>Пополнить на</span>
+                            <div class="replenish-amount">$ 50</div>
+                        </div>    
+                        <div class="get-amount-of-money">
+                            <span>Получить</span>
+                            <div class="get-amount">$ 100</div>
+                        </div>
+                    </div>
+                    <div class="tariff active">
+                        <div class="replenish">
+                            <span>Пополнить на</span>
+                            <div class="replenish-amount">$ 100</div>
+                        </div>    
+                        <div class="get-amount-of-money">
+                            <span>Получить</span>
+                            <div class="get-amount">$ 200</div>
+                        </div>
+                    </div>
+                    <div class="tariff">
+                        <div class="replenish">
+                            <span>Пополнить на</span>
+                            <div class="replenish-amount">$ 500</div>
+                        </div>    
+                        <div class="get-amount-of-money">
+                            <span>Получить</span>
+                            <div class="get-amount">$ 1000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="proposition-of-enrollment">
+                    <div class="proposition">
+                        <span id="amountOfProposition">$ 150</span><label>,00</label>будет зачислено вам на счет
+                    </div>
+                    <div class="replenish" onclick="replenish()">
+                        <a href="#" >Пополнить</a>
+                        <div class="bluer"></div>
+                    </div>
+                    <div class="information-about-replenish">
+                        При пополнении счета с банковской карты списание средств происходит по курсу банка клиента
+                    </div>
+                    <div class="more-details">
+                        <span>Подробнее</span>
+                        <img src="./img/dotted_border.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
